@@ -1,14 +1,13 @@
 import React from 'react';
-import HomePage from './components/HomePage';
-import RegistrationForm from './components/RegistrationForm';
+import LandingPage from './components/LandingPage';
+import './App.css';
 
 function App() {
   return (
-    <div className = "App">
-      <HomePage />
-      <RegistrationForm />
+    <div className="App">
+      <LandingPage />
     </div>
   );
-};
+}
 
 export default App;

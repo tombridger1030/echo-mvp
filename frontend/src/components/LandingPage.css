@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Khand';
+  src: url('../components/kind_sans_thin/Kind\ Sans\ Thin.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Add this somewhere visible, like the body or a prominent element */
+.font-test {
+  font-family: 'Khand', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Khand, sans-serif;
+  background-color: #400e03;
+}
+
+.landing-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 200px; /* Adjust this value to move the button up or down */
+  right: 200px; /* Adjust this value to move the button left or right */
+  padding: 0;
+  z-index: 10;
+}
+
+.auth-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #aa1c04;
+  border-radius: 10px;
+  font-family: Khand, sans-serif;
+  font-weight: bolder;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 60%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  font-size: 1.2em;
+  border: none; /* Remove the border */
+  border-radius: 25px;
+  outline: none; /* Remove the outline */
+  background-color: #aa1c04; /* Dark red background color */
+  color: white; /* White text color */
+  background-image: url('Echo-Icon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+  padding-left: 40px;
+  font-family: Khand, sans-serif;
+  font-weight: bold;
+}
+
+.search-bar::placeholder {
+  color: white;
+}
+
+.previous-research-label {
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.research-blocks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.research-block {
+  background-color: #aa1c04;
+  padding: 5px;
+  border-radius: 15px;
+  width: calc(33% - 14px);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.9em;
+  color: white;
+  border: 1px solid #333;
+}
+
+.research-block h3 {
+  margin-top: 0;
+  margin-bottom: 2px;
+  text-align: left;
+  padding-left: 7px;
+}
+
+.research-block p {
+  margin: 0;
+  text-align: left;
+  padding-left: 7px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    width: 90%;
+  }
+  
+  .research-blocks {
+    flex-direction: column;
+  }
+  
+  .research-block {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

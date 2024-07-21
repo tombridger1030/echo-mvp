@@ -1,11 +1,15 @@
 const express = require('express');
+const cors = require('cors');
+const searchRouter = require('./routes/search');
+
 const app = express();
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello from the server!');
-});
+app.use(cors());
+app.use(express.json());
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.use('/api', searchRouter);
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

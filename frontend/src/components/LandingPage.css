@@ -17,7 +17,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: Khand, sans-serif;
-  background-color: #400e03;
+  background-color:  #2d2c29;
 }
 
 .landing-page {
@@ -42,7 +42,7 @@ header {
   border: none;
   cursor: pointer;
   color: white;
-  background-color: #aa1c04;
+  background-color: #be2807;
   border-radius: 10px;
   font-family: Khand, sans-serif;
   font-weight: bolder;
@@ -56,7 +56,7 @@ main {
 }
 
 .content-wrapper {
-  width: 60%;
+  width: 80%;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -65,19 +65,23 @@ main {
 }
 
 .search-bar {
-  width: 100%;
+  min-width: 300px;
+  max-width: 800px;
+  min-height: 40px;
+  max-height: 500px;
   padding: 10px 40px 10px 10px;
   font-size: 1.2em;
   border: none; /* Remove the border */
   border-radius: 25px;
   outline: none; /* Remove the outline */
-  background-color: #aa1c04; /* Dark red background color */
+  background-color: #be2807; /* Dark red background color */
   color: white; /* White text color */
-  background-image: url('Echo-Icon.png');
+  background-image: url('Echo\ Animate.png');
   background-repeat: no-repeat;
   background-position: 10px center;
-  background-size: 20px;
-  padding-left: 40px;
+  background-position: 10px left;
+  background-size: 30px;
+  padding-left: 50px;
   font-family: Khand, sans-serif;
   font-weight: bold;
 }
@@ -88,7 +92,7 @@ main {
 
 .previous-research-label {
   align-self: flex-start;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: white;
 }
@@ -97,20 +101,21 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 10px; 
 }
 
 .research-block {
-  background-color: #aa1c04;
-  padding: 5px;
+  background-color: #be2807;
+  padding: 10px; /* Increased padding */
   border-radius: 15px;
-  width: calc(33% - 14px);
-  margin-bottom: 10px;
+  width: 28%; /* Adjust if needed */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   font-size: 0.9em;
   color: white;
-  border: 1px solid #333;
+  border: none;
 }
 
 .research-block h3 {

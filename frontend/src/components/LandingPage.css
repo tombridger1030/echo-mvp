@@ -97,51 +97,52 @@ main {
   color: white;
 }
 
+
 .research-blocks {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 10px; 
+  margin-top: 20px;
 }
 
 .research-block {
   background-color: #be2807;
-  padding: 10px; /* Increased padding */
+  padding: 15px;
   border-radius: 15px;
-  width: 28%; /* Adjust if needed */
+  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   font-size: 0.9em;
   color: white;
-  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.research-block:hover {
+  background-color: #d62e07;
 }
 
 .research-block h3 {
   margin-top: 0;
-  margin-bottom: 2px;
-  text-align: left;
-  padding-left: 7px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 .research-block p {
   margin: 0;
-  text-align: left;
-  padding-left: 7px;
+  font-size: 0.9em;
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
-  .content-wrapper {
-    width: 90%;
-  }
-  
   .research-blocks {
     flex-direction: column;
   }
   
   .research-block {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }

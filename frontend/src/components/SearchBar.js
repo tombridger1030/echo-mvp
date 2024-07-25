@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { extractTopic } from './utils/topicExtractor';
 
 const SearchBar = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -8,8 +7,7 @@ const SearchBar = ({ onSearch }) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       if (searchQuery.trim() && typeof onSearch === 'function') {
-        const extractedTopic = extractTopic(searchQuery);
-        onSearch(searchQuery, extractedTopic);
+        onSearch(searchQuery.trim());
       }
     }
   };
